@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: auth-service
+  cloud:
+    config:
+      fail-fast: true
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-center

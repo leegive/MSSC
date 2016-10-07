@@ -1,0 +1,18 @@
+server:
+  port: 5555
+  context-path: /uaa
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+security:
+  user:
+    name: user
+    password: password
+  sessions: if_required
+  oauth2:
+    client:
+      client-id: acme
+      client-secret: acmesecret
+      authorized-grant-types: authorization_code,refresh_token,password
+      scope: openid
