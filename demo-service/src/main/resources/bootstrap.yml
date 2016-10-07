@@ -3,6 +3,7 @@ spring:
     name: demo-service
   cloud:
     config:
+      fail-fast: true
       label: master
       profile: dev
       discovery:
